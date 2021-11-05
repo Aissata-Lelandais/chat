@@ -1,0 +1,11 @@
+.editorconfig
+.env
+.env.dev
+.eslintrc
+.ssh
+*.orig
+stats.json
+.idea/
+.vscode/
+client/dist/*
+node_modules/
