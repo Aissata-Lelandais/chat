@@ -61,32 +61,9 @@ export default {
     }
   }
 
-  methods:{
-    getMessage(currentId){
-      this.axios({
-        method:"GET",
-        url:`${process.env.NODE_URL}/message`,
-        params:{idUser:currentId}
-      })
-      
-    }
-  }
+}
 
-  methods:{
-    getUsers(currentId){
-      this.axios({
-        method:"GET",
-        url:`${process.env.NODE_URL}/users`,
-        params:{idUser:currentId}
-      })
-      .then((results)=>results.data)
-       .then(results => {
-          this.logs = results;
-        });
-        this.currentUserId=currentId;
-    }
-  }
-};
+  
 </script>
 
 <style lang="scss" scoped>
