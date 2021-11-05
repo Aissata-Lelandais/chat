@@ -28,8 +28,8 @@ export default {
     return {
       logs: [],
       socket: new Socket().getSocket(),
-      myUser:null
-      myChat:null
+      myUser:null,
+      myChat:null,
       myMessage:null
     };
   },
